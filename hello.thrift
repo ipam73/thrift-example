@@ -1,7 +1,6 @@
 // Thrift interface
 // compile go code by running:
-// thrift -r --gen go:thrift_import="github.com/apache/thrift/lib/go/thrift" systemic.thrift
-
+// thrift -r --gen go:thrift_import="github.com/apache/thrift/lib/go/thrift" hello.thrift
 
 // Thrift structs define a common object. A struct has a set of strongly typed fields,
 // each with a unique name identifier
@@ -51,3 +50,4 @@ service Hello {
 	 */
 	string hello(1: string username) throws (1: HelloError error),
 }
+
